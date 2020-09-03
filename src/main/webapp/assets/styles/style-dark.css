@@ -1,0 +1,111 @@
+html,
+body {
+  background: #ffffff;
+}
+#wrapper {
+  background: #ffffff;
+}
+/*---------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------
+2. Header
+*/
+.header .logo {
+  background-color: #1D917A;
+}
+/*---------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------
+3. Fixed Nabar
+*/
+.fixed-navbar {
+  background: #F4FBF5;
+  color: #1D917A ;
+}
+.fixed-navbar .ico-item {
+  color: #999;
+}
+.fixed-navbar .ico-item:hover {
+  color: #1D917A;
+}
+.menu-mobile-button {
+  background: #dcf2df;
+  color: #1D917A;
+}
+@media (min-width: 1025px) {
+  .searchform .button-search:hover {
+    color: #1D917A;
+  }
+}
+/*---------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------
+4. Main Menu
+*/
+.main-menu {
+  background: #1D917A;
+  color: #ffffff;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+.main-menu .user .name a {
+  color: #ffffff;
+}
+.main-menu .user .control-wrap > .fa {
+  color: #ffffff;
+}
+.navigation .title {
+  color: #ffffff;
+  background: #1e8974;
+}
+.navigation .menu a {
+  color: #a3a3a3;
+}
+.navigation .menu a i {
+  color: #ffffff;
+}
+@media (min-width: 1025px) {
+  .navigation .menu a:hover {
+    color: #ffffff;
+  }
+  .navigation .menu a:hover i {
+    color: #ffffff;
+  }
+}
+.navigation .menu > li.active > a {
+  background: #1e8974;
+  color: #ffffff;
+}
+.navigation .menu > li.current > a {
+  color: #ffffff;
+  background: #1e8974;
+}
+.navigation .menu > li.current .current > a {
+  color: #ffffff;
+}
+/*---------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------
+5. Menu Active
+*/
+@media (min-width: 800px) {
+  .menu-active .header .logo {
+    color: #1D917A;
+  }
+  .menu-active .header .logo:before {
+    background: #1D917A;
+  }
+  .menu-active .navigation .menu > li:hover > a {
+    background: #1e8974;
+  }
+  .menu-active .navigation .menu .sub-menu a {
+    background: #1e8974;
+  }
+}
+/*---------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------
+6. Box content
+*/
+.box-content {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05), 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+/*---------------------------------------------------------------------*/
