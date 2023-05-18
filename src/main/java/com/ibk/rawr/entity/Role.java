@@ -1,25 +1,18 @@
 package com.ibk.rawr.entity;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.IndexDirection;
-import org.springframework.data.mongodb.core.index.Indexed;
-import org.springframework.data.mongodb.core.mapping.Document;
+import javax.persistence.*;
 
-@Document(collection = "role")
+@Entity
+@Table(name = "roles")
 public class Role {
-	@Id
-    private String id;
-	@Indexed(unique = true, direction = IndexDirection.DESCENDING, dropDups = true)
-    private String role;
-  
-    
-    public String getId() {
-        return id;
-    }
 
-    public void setId(String id) {
-        this.id = id;
-    }
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    @Column(nullable = false, length = 45)
+    private String role;
+
 
 	public String getRole() {
 		return role;

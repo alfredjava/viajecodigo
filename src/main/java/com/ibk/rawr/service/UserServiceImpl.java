@@ -1,5 +1,6 @@
 package com.ibk.rawr.service;
 
+import java.util.Collection;
 import java.util.HashSet;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void save(User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
-        user.setRoles(new HashSet<>(roleRepository.findAll()));
+        user.setRoles(new HashSet<>((Collection) roleRepository.findAll()));
         userRepository.save(user);
     }
 
@@ -44,7 +45,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public Page<User> findAll(int pageNo, int pageSize, Direction dir, String str) {
 		PageRequest request = buildPageRequest(pageNo, pageSize, dir, str);
-        Page<User> users = userRepository.findAll(request);
+        Page<User> users =  userRepository.findAll(request);
         return users;
 	}
 
